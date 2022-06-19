@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+}
+
+html {
+  background-image: linear-gradient(#fc5e55, #fa4083);
+}
+
+body {
+  background-image: url(/img/image-lion-backgroundflipped.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 1024px;
+  min-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  /* min-height: 100px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+}
+
+.logoheader {
+  /* width: 70%; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.menubar {
+  /* width: 20%; */
+  /* align-items: center; */
+  /* min-height: 50px; */
+  align-items: flex-end;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+.navbutton {
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  color: #fa4083;
+  font-family: "Lato", sans-serif;
+  padding: 11px 25px;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 3px;
+  width: 140px;
+
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.navbutton:hover .dropdown {
+  display: block;
+}
+
+.navbutton:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+
+.navbutton2 {
+  text-decoration: none;
+  background-color: white;
+  color: #fa4083;
+  font-family: "Lato", sans-serif;
+  padding: 11px 25px;
+  display: block;
+  position: relative;
+  /* margin-top: 12px; */
+  border-radius: 3px;
+
+  /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); */
+}
+
+.navbutton2:hover {
+  background-color: black;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fa4083;
+  margin-left: 2px;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 3.25rem;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  color: white;
+  line-height: 1.75rem;
+  margin-bottom: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+}
+
+.imagecontainer {
+  align-items: flex-end;
+  height: 308px;
+  width: 456px;
+  align-items: center;
+}
+
+.rightside {
+  height: 300px;
+  align-items: flex-end;
+  align-items: center;
+  width: 456px;
+  display: block;
+  border-left: 1px solid rgba(255, 255, 255, 0.529);
+}
+
+form {
+  margin-left: 20px;
+  display: block;
+
+  /* height: 300px;
+  width: 456px;
+  align-items: flex-end;
+  border-left: 1px solid rgba(255, 255, 255, 0.561); */
+}
+
+.signinlink {
+  text-decoration: none;
+  padding: 3px 17px;
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+  color: #fa4083;
+  border-radius: 3px;
+  font-size: 16px;
+  display: inline-block;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+label {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.signinlink:hover {
+  transition: 0.5s;
+  background-color: black;
+}
+
+.pAccount {
+  color: white;
+  line-height: 1.75rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.main2 {
+  min-height: 300px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.card1 {
+  background-image: url(img/image-background-card1.jpg);
+  min-height: 250px;
+  width: 30%;
+  background-size: cover;
+  background-position: bottom;
+  border-style: outset;
+  border-width: 0.8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.409);
+}
+
+.card2 {
+  min-height: 250px;
+  width: 30%;
+  background-image: url(img/image-background-card2.jpg);
+  background-size: cover;
+  background-position: bottom;
+  border-style: outset;
+  border-width: 0.8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.409);
+}
+
+.card3 {
+  min-height: 250px;
+  width: 30%;
+  background-image: url(img/image-background-card3.jpg);
+  background-size: cover;
+  background-position: bottom;
+  border-style: outset;
+  border-width: 0.8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.409);
+}
+
+.cards i {
+  font-size: 100px;
+  color: #fff;
+  padding-top: 30px;
+}
+
+.herobox1 {
+  /* width: 60%; */
+  min-height: 50%;
+}
+
+.herobox2 {
+  /* width: 40%; */
+  min-height: 50%;
+  justify-content: flex-end;
+  padding-left: 100px;
+  padding-bottom: 30px;
+}
+
+.cards p {
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+  margin: 10px 30px 20px 30px;
+}
+
+/* .section3 {
+  min-height: 300px;
+} */
+
+.cards a {
+  text-decoration: none;
+}
+
+.mybutton {
+  text-decoration: none;
+  background-color: white;
+  color: #fa4083;
+  font-family: "Lato", sans-serif;
+  padding: 11px 25px;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.mybuttoncontact {
+  text-decoration: none;
+  background-color: white;
+  color: #fa4083;
+  font-family: "Lato", sans-serif;
+  padding: 11px 25px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.mybuttoncontact:hover {
+  transition: 0.5s;
+  background-color: black;
+}
+
+.mybutton2 {
+  /* padding: 11px 25px;
+  border: 1px solid white;
+  font-family: "Playfair Display", serif;
+  border-radius: 3px; */
+  text-decoration: none;
+  background-color: white;
+  color: #fa4083;
+  font-family: "Lato", sans-serif;
+  padding: 11px 25px;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.mybutton2:hover {
+  background-color: black;
+  border-color: black;
+  transition: 0.5s;
+}
+
+.imagecontainer {
+  /* border-radius: 10px; */
+  box-shadow: 10px 10px 3px #272727;
+  border-color: white;
+  /* border-style: outset; */
+
+  /* transform: rotate(2deg); */
+  /* transform: rotate3d(10, 50, 50, 45deg); */
+}
+
+.mybutton:hover {
+  background-color: black;
+  transition-duration: 0.5s;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.tbox {
+  width: 47%;
+  padding: 50px;
+  border: 1px solid white;
+  margin-top: 50px;
+}
+
+/* .tbox :last-child {
+  font-size: 14px;
+} */
+
+/* .tbox p:last-of-type {
+  font-size: 12px;
+  padding-left: 30px;
+} */
+
+.tbox p:nth-child(2) {
+  font-size: 12px;
+  padding-left: 30px;
+}
